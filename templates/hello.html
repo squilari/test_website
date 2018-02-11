@@ -1,2 +1,26 @@
-<p> Hello Luna <p>
-<img src="{{ url_for('static', filename='fireworks.gif')}}" >
+<img src="{{ url_for('static', filename='fireworks.gif')}}" id="fireworks">
+
+<div id="words">
+  <p> Hello Song! </p>
+</div>
+
+<style>
+  div#words {
+    position:relative;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 250;
+    left: 425;
+    top: 100;
+  }
+  img#fireworks {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+  body {
+    margin: 0
+  }
+
+</style>
